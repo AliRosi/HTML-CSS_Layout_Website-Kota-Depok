@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Kota Depok</title>
+    <style type="text/css">
+        /* Jenis Font yg digunakan */
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* bagian Header */
+        .jumbotron {
+            padding: 25px;
+            background-color: #2b961f;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        /* bagian Navigasi/Menu */
+        nav {
+            background-color: #008000;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav li {
+            display: inline;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            font-weight: bold;
+        }
+        /* bagian Main/Article(section-section) */
+        main {
+            padding: 20px;
+            overflow: auto;
+        }
+
+        #content {
+            float: left;
+            width: 75%;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        h2,
+        h3 {
+            color: #008000;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+        /* bagian Aside */
+        aside {
+            float: right;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        .profile header {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 150px;
+        }
+        /* bagian Footer */
+        footer {
+            padding: 20px;
+            color: white;
+            background-color: #008000;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        /* Pengaturan Tampilan Mobile(HP) */
+        @media screen and (max-width: 1000px) {
+
+            #content,
+            aside {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        header {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <img src="image/logo_depok.png" width="50px">
+            <h1>Kota Depok</h1>
+            <p>Kota Belimbing & Magical Place</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#wisata">Tempat Wisata</a></li>
+                <li><a href="#support">Dev Web</a></li>
+                <li><a href="https://www.depok.go.id/">Website Resmi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="sejarah" class="card">
+                <h2>Sejarah</h2>
+                <img src="image/ui.jpg" class="featured-image" alt="sejarah">
+                <figcaption>Foto UI Google</figcaption>
+                <p>Kota Depok bermula dari sebuah Kecamatan yang berada di lingkungan Kawedanan (Pembantu Bupati)
+                    wilayah Parung Kabupaten Bogor. Pada tahun 1976 perumahan mulai dibangun baik oleh Perum Perumnas
+                    maupun pengembang yang kemudian diikuti dengan dibangunnya kampus Universitas Indonesia (UI), serta
+                    meningkatnya perdagangan dan jasa yang semakin pesat sehingga diperlukan kecepatan pelayanan.</p>
+
+                <p>Perkembangan Depok yang begitu cepat menjadi perhatian bagi Pemerintah Orde Baru. Menteri Dalam
+                    Negeri kala itu, Amir Machmud, mulai mengkaji peningkatan status Kecamatan Depok menjadi Kota
+                    Administratif. Peningkatan status Kota Depok dilakukan agar pembangunan lebih tertata dan terarah
+                    sebagai kota masa depan, ketimbang dikelola sepenuhnya oleh Kota Bogor yang hanya sebagai kecamatan
+                    yang dipimpin oleh Camat.</p>
+            </article>
+
+            <article id="wisata" class="card">
+                <h2>Wisata</h2>
+                <p>Apakah Anda tinggal di Depok, Jawa Barat, atau berencana untuk berkunjung ke kota ini? Jangan
+                    melewatkan tempat-tempat wisata menarik dan populer yang ada di Depok. Kota yang terletak di
+                    antara Jakarta dan Bogor ini memiliki beberapa rekomendasi tempat wisata,<br> Berikut ini
+                    rekomendasi tempat wisata yang dapat anda kunjungi.</p>
+                <section>
+                    <h3>Masjid Kubah Emas / Dian Al-Mahri Depok</h3>
+                    <img src="image/masjid_kubah_emas.jpeg" class="featured-image" alt="Masjid Kubah Emas">
+                    <p>Kota Depok juga terkenal dengan wisata religinya. Salah satu tempat wisata tersebut adalah Masjid
+                        Dian Al-Mahri. Masjid ini dibangun dengan ornamen dan arsitektur yang sangat cantik untuk
+                        dilihat. Salah satu hal yang paling menarik dari masjid ini adalah memiliki kubah yang berwarna
+                        emas.
+                        <br><br>
+                        Selain itu, Masjid Dian Al-Mahri juga memiliki lampu gantung yang sangat indah dan diimpor
+                        langsung dari Italia. Masjid ini merupakan salah satu masjid tercantik dan termegah di kawasan
+                        Asia Tenggara. Masjid ini diresmikan pada tanggal 31 Desember 2006.
+                    </p>
+                </section>
+                <section>
+                    <h3>Taman Wiladatika</h3>
+                    <img src="image/taman_wiladatika.jpg" class="featured-image" alt="Taman Wiladatika">
+                    <p>Tempat wisata ini merupakan salah satu yang banyak dikunjungi oleh banyak orang. Memiliki luas
+                        sekitar 15 Ha menjadikan tempat wisata ini terlihat sangat luas dan cantik. Disini, Anda bisa
+                        menikmati pemandangan bunga yang indah dan warna-warni. Tempat ini juga menyejukkan karena
+                        dipenuhi oleh pepohonan yang rindang.
+                        <br><br>
+                        Taman bunga iladatika termasuk salah satu tempat wisata yang sudah berusia cukup tua. Namun,
+                        taman ini memiliki desain yang sangat cantik sehingga cocok digunakan untuk spot foto ataupun
+                        sekedar untuk jalan-jalan. Taman ini sangat cocok digunakan untuk piknik bersama keluarga maupun
+                        teman.
+                    </p>
+                </section>
+            </article>
+        </div>
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Kota Depok</h2>
+                    <p>Kota Belimbing & Magical Place</p>
+                    <figure>
+                        <img src="image/logo_depok.png">
+                        <figcaption>Lambang</figcaption>
+                    </figure>
+                </header>
+                <section>
+                    <h3>Informasi Lainnya</h3>
+                    <table>
+                        <tr>
+                            <th>Negara</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Terbentuknya</th>
+                            <td>27 April 1999</td>
+                        </tr>
+                        <tr>
+                            <th>Luas Total</th>
+                            <td>200,3 km²</td>
+                        </tr>
+                        <tr>
+                            <th>Bahasa Daerah</th>
+                            <td>Betawi</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+        <aside>
+            <article id="support" class="profile card">
+                <header>
+                    <h2>
+                        <marquee>Support</marquee>
+                    </h2>
+                    <p>Bagian Pembangun Web</p>
+                    <figure>
+                        <img src="image/ar.jpg">
+                        <figcaption>Ali Rosi</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="image/arcalogo.png">
+                        <figcaption>Arca Team</figcaption>
+                    </figure>
+                </header>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <p>Website Kota Depok 2022 &copy; Ali Rosi</p>
+    </footer>
+</body>
+</html
